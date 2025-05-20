@@ -29,6 +29,11 @@ body{
     width: 15px;
 }
 
+.header a{
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+}
+
 section {
     margin: 0 auto;
     padding: 0 20px;
@@ -80,4 +85,18 @@ section {
 .filme:hover{
     transform: translateY(-10px);
     background-color: #252525;
+}
+
+footer{
+    background-color: #363636;
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin-top: 10%;
+}
+
+footer p{
+    width: 10px auto;
+    text-align: center;
+    color: rgb(202, 202, 202);
 }
