@@ -7,6 +7,7 @@
 
 body{
     background-color: #3636363b;
+    overflow-x: hidden;
 }
 
 .header{
@@ -18,6 +19,7 @@ body{
     align-items: center;
     padding: 0 80px;
     vertical-align: middle;
+    min-width: 388px;
 }
 
 .header input{
@@ -93,10 +95,26 @@ footer{
     height: 50px;
     padding: 15px;
     margin-top: 10%;
+    min-width: 388px;
 }
 
 footer p{
     width: 10px auto;
     text-align: center;
     color: rgb(202, 202, 202);
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+
+    .header {
+        justify-content: flex-end;
+        padding: 0 20px;
+    }
+
+    .header input {
+        margin-right: 0;
+    }
 }
