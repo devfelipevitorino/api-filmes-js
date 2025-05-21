@@ -48,6 +48,17 @@ body {
     color: rgb(202, 202, 202);
 }
 
+.header a.logo {
+    display: block;
+    max-width: 150px;
+}
+
+.header a.logo img {
+    max-width: 150px;
+    width: 20%;
+    height: auto;
+}
+
 .lupa-buscar{
     cursor: pointer;
 }
@@ -132,7 +143,7 @@ footer p{
         margin-right: 0;
     }
     
-    .logo {
+    .logo img{
         display: none;
     }
 }
