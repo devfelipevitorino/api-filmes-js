@@ -5,9 +5,21 @@
     font-family: 'Inter';
 }
 
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #3636363b;
     overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}   
+
+.conteudo {
+    flex: 1;
 }
 
 .header{
@@ -34,6 +46,10 @@ body{
 .header a{
     text-decoration: none;
     color: rgb(202, 202, 202);
+}
+
+.lupa-buscar{
+    cursor: pointer;
 }
 
 section {
@@ -105,16 +121,17 @@ footer p{
 }
 
 @media screen and (max-width: 500px) {
-    .logo {
-        display: none;
-    }
-
+    
     .header {
         justify-content: flex-end;
         padding: 0 20px;
     }
-
+    
     .header input {
         margin-right: 0;
+    }
+    
+    .logo {
+        display: none;
     }
 }
