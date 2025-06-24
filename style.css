@@ -129,6 +129,10 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+.bg p{
+    font-size: 12px;
+}
+
 .form {
     background-color: #1e1e1e;
     padding: 30px;
@@ -141,6 +145,10 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.form img {
+    width: 35%;
 }
 
 .closeBtn {
