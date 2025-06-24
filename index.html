@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <title>Veja sugestões de filmes</title>
 </head>
-<body>  
-    <div class="conteudo"> 
+
+<body>
+    <div class="conteudo">
         <header class="header">
             <a class="logo" href="#"><img src="assets/logo.svg"></a>
-            
+
             <div class="buscar">
                 <input class="input-buscar" type="text" placeholder="Procurar filme">
                 <img class="lupa-buscar" src="assets/search.svg" alt="lupa">
             </div>
         </header>
-        
+
         <section>
             <div class="titulo">
                 <h1>Explore e encontre o filme ideal para o seu momento!</h1>
             </div>
             <div class="filmes-container"></div>
         </section>
+
+        <div class="bg">
+            <div class="form">
+                <span class="closeBtn">&times;</span>
+                <h2 id="modal-titulo">Título do Filme</h2>
+                <img id="modal-imagem" class="capa" src="" alt="Capa do Filme">
+                <p id="modal-descricao">Descrição do filme...</p>
+
+                <div class="info-extra">
+                    <p><strong>Diretor:</strong> <span id="modal-diretor">Carregando...</span></p>
+                    <p><strong>Lançamento:</strong> <span id="modal-lancamento">--</span></p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
     <footer>
         <p>Felipe Vitorino</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js"></script>
+    <script src="jquery/modal.js"></script>
+
 </body>
+
 </html>
